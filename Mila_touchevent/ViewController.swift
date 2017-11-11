@@ -173,7 +173,7 @@ class ViewController: UIViewController {
                     let CountY = Double(valueArray[(countA*10)+b+1])
                     let AnsCount = sqrt(pow(CountX!-GX!, 2)+pow(CountY!-GY!, 2))
                     
-                    //找最近的
+                    
                     if AnsCount != 0 {
                         if dis > AnsCount {
                             dis = AnsCount
@@ -271,14 +271,14 @@ class ViewController: UIViewController {
                 //let touchcount = touches.count
                 if rememberData == true {
                     for touch in touches {
-                        //let num = touch.force 壓力
+                       
                         if touches.count == 5 {
-                            //座標
+                            
                             let location = touch.location(in: self.view)
                             let X=Int(location.x)
                             let Y=Int(location.y)
                             
-                            //時間
+                            
                             tt = Date()
                             let formatter = DateFormatter()
                             formatter.dateFormat = "ss.SSS"
@@ -301,11 +301,11 @@ class ViewController: UIViewController {
                 if rememberData == true {
                     for touch in touches {
                         if touches.count == 5 {
-                            //座標
+                            
                             let location = touch.location(in: self.view)
                             let X=Int(location.x)
                             let Y=Int(location.y)
-                            //時間
+                            
                             tt = Date()
                             let formatter = DateFormatter()
                             formatter.dateFormat = "ss.SSS"
@@ -331,11 +331,11 @@ class ViewController: UIViewController {
             if rememberData == true {
                 for touch in touches {
                     if touches.count == 5 {
-                        //座標
+                        
                         let location = touch.location(in: self.view)
                         let X=Int(location.x)
                         let Y=Int(location.y)
-                        //時間
+                        
                         tt = Date()
                         let formatter = DateFormatter()
                         formatter.dateFormat = "ss.SSS"
